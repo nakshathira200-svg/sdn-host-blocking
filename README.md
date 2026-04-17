@@ -91,11 +91,7 @@ mininet> h1 ping -c 4 h2
 
 **Expected result:** 4 successful replies.
 
-```
-64 bytes from 10.0.0.2: icmp_seq=1 ttl=64 time=1.94 ms
-...
-4 packets transmitted, 4 received, 0% packet loss
-```
+
 
 <img width="627" height="210" alt="Screenshot 2026-04-17 at 11 15 43 AM" src="https://github.com/user-attachments/assets/3ce4e0a9-4f19-4a8b-b369-e53ab1861c03" />
 ### Scenario 2 – Suspicious traffic detection & blocking
@@ -151,11 +147,6 @@ sudo ovs-ofctl dump-flows s1 -O OpenFlow13
 cat ~/sdn-host-blocking/logs/blocked.log
 ```
 
-**Expected output:**
-
-```
-Fri Apr 17 04:30:54 2026 - BLOCKED: 10.0.0.1
-```
 
 <img width="630" height="103" alt="Screenshot 2026-04-17 at 11 18 41 AM" src="https://github.com/user-attachments/assets/5ab7fcc4-ce0d-4d5e-aa96-3a8683746f51" />
 
